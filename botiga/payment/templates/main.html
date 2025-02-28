@@ -1,0 +1,16 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Main</h3>
+
+    <p>URL = "http://127.0.0.1:8000/payment/payment/id" on id es "id del ordre" que vols pagar</p>
+
+    <p>Si al utilizar "http://127.0.0.1:8000/payment/payment/id" et redirigeix al main significa que ja esta pagat l'ordre amb aquell id o que no existeix</p>
+
+    <a href="{% url 'logout' %}">Tanca sessio</a>
+</body>
+</html>
