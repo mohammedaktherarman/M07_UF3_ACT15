@@ -3,10 +3,10 @@ services:
   db:
     image: postgres:13
     container_name: db
-    environment:  
-      - POSTGRES_DB=postgres
-      - POSTGRES_PASSWORD=pass_postgres
-      - POSTGRES_USER=user_postgres
+    environment:
+      - POSTGRES_DB=ITIC_DB
+      - POSTGRES_PASSWORD=ITIC
+      - POSTGRES_USER=ITIC_user
     ports:
       - "5432:5432"
     volumes:
@@ -15,10 +15,10 @@ services:
     image: dpage/pgadmin4
     container_name: pgadmin4
     ports:
-      - "80:80"
+      - "5050:80"
     environment:
-      PGADMIN_DEFAULT_EMAIL: 2023_arman.mohammed@iticbcn.cat
-      PGADMIN_DEFAULT_PASSWORD: ARMAN001
+      PGADMIN_DEFAULT_EMAIL: 2023_oriol.gonzalez@iticbcn.cat
+      PGADMIN_DEFAULT_PASSWORD: oriol123
     volumes:
       - pgadmin-data:/var/lib/pgadmin
 volumes:

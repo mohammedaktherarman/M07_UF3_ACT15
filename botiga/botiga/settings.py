@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'catalog',
     'payment',
+    'cart',
+    'orders',
 ]
 
 MIDDLEWARE = [
@@ -130,9 +132,9 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres', 
-        'USER': 'user_postgres',  
-        'PASSWORD': 'pass_postgres',  
+        'NAME': 'ITIC_DB',
+        'USER': 'ITIC_user',
+        'PASSWORD': 'ITIC',
         'HOST': 'localhost',  
         'PORT': '5432',  
     }
